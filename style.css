@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap');
+
+/* Resets  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2rem;
+}
+
+
+/* Background Links  */
+
+#waterfalls {
+    background-image: url("https://images.unsplash.com/photo-1487734092093-e5b02908580e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+}
+#hills {
+    background-image: url("https://images.unsplash.com/photo-1506260408121-e353d10b87c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlsbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");  
+}
+#ocean {
+    background-image: url("https://media.istockphoto.com/id/1302342943/photo/dangerous-powerful-storm-surge-wave-dark-and-fearful-provoking-scene.jpg?b=1&s=170667a&w=0&k=20&c=cqXgkLIZNiwNwOhuYYePhqO5aNphjENs5eJkEKz-UW8=");  
+}
+#rain {
+    background-image: url("https://images.unsplash.com/photo-1525939864518-b53937989bbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHJhaW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");  
+}
+#mountains {
+    background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");  
+}
+#trees {
+    background-image: url("https://plus.unsplash.com/premium_photo-1667311649805-0d5dc53a713c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHJlZXN8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");  
+}
+#beach {
+    background-image: url("https://images.unsplash.com/photo-1476673160081-cf065607f449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNofGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60");  
+}
+
+/* Utility Classes  */
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.sub-heading {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.box {
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #222;
+    background-blend-mode: difference;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-position: center;
+    background-blend-mode: normal;
+    box-shadow: 0 0 4px white;
+}
+
+/* Main Container  */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+
+/* left Section  */
+.left-section {
+    flex-basis: 38%;
+    margin: 20x;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* Gallery :- Right section  */
+.gallery {
+    flex-basis: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+    gap: 5px;
+}
